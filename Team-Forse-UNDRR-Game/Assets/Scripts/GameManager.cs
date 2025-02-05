@@ -40,10 +40,13 @@ public class GameManager : MonoBehaviour
     public int popAlive { get; private set; }
     public int popInjured { get; private set; }
     public int popDead { get; private set; }
+    public int workforceTotal { get; private set; }
     public int workforceActive { get; private set; }
     public int workforceIdle { get; private set; }
     public int currentPlayerActions { get; private set; }
     public int maxPlayerActions { get; private set; }
+
+    public int PoliticalInfluence { get; private set; }
 
     // Awake runs before Start
     private void Awake()
@@ -178,4 +181,13 @@ public class GameManager : MonoBehaviour
     {
         currentPlayerActions = maxPlayerActions;
     }
+
+    
+    /// Adjusts Political Influence. Can be used with negative to subtract.
+    /// Clamped between 0 and 100.
+    public void AdjustPoliticalInfluence(int amount)
+    {
+        PoliticalInfluence = Mathf.Clamp(PoliticalInfluence + amount, 0, 100);
+    }
+
 }
