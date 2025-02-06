@@ -15,6 +15,11 @@ public class MaterialSwitcher : MonoBehaviour
         rend.sharedMaterial = material;
     }
 
+    private void OnMouseDown()
+    {
+        SwapMaterials();
+    }
+
     public void SwapMaterials()
     { 
         rend.sharedMaterial = material2;
@@ -22,4 +27,5 @@ public class MaterialSwitcher : MonoBehaviour
         material = material2;
         material2 = tempMat;
     }
+
 }
