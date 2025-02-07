@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
         UpdateUI();  // Call this every frame (or optimize with an event-based approach)
     }
 
-    void UpdateUI()
+   public void UpdateUI()
     {
         // Update City Funds
         cityFundsText.text = $"Funds: ${gameManager.cityFunds:F2}";
