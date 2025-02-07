@@ -303,8 +303,9 @@ GameObject:
   - component: {fileID: 112834568}
   - component: {fileID: 112834567}
   - component: {fileID: 112834566}
+  - component: {fileID: 112834570}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,6 +429,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 30, y: 90, z: 0}
+--- !u!114 &112834570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112834565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2fe6e57dd7ed84bb4a060a87367e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAngle: 90
+  rotationSpeed: 2
 --- !u!1 &135065564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1753763724}
   image: {fileID: 563643011}
+  backButton: {fileID: 1257411233}
 --- !u!65 &443472005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1674,7 +1690,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 127d503b39d2d394abcf6708533bd941,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6481366
+      value: -2.951
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 127d503b39d2d394abcf6708533bd941,
         type: 3}
@@ -2448,7 +2464,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: 80e2ac55815696b4fba5cd027a2bf870, type: 3}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
