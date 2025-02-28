@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TestForTurnSystemUI : MonoBehaviour
 {
+    GameManager gameManager;
     public GameObject startTurnPopup, preTurnPopup, playerActionsGroup, endTurnPopup;
     GameObject[] AttachedGameObjects;
+    public TextMeshProUGUI actionsNum, fundsNum, influenceNum, healthyPopNum;
     private void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         AttachedGameObjects = new GameObject[] { startTurnPopup, preTurnPopup, playerActionsGroup, endTurnPopup };
     }
     public void StartTurnPopup()
@@ -18,6 +23,7 @@ public class TestForTurnSystemUI : MonoBehaviour
     public void PreActionsPopup()
     {
         preTurnPopup.SetActive(true);
+        UpdateAllTexts();
     }
 
     public void PlayerActionsPhase()
@@ -35,5 +41,34 @@ public class TestForTurnSystemUI : MonoBehaviour
         {
             obj.SetActive(false);
         }
+    }
+
+    private void UpdateAllTexts()
+    {
+        actionsNum.text = gameManager.currentPlayerActions.ToString();
+        fundsNum.text = gameManager.cityFunds.ToString();
+        influenceNum.text = gameManager.PoliticalInfluence.ToString();
+        healthyPopNum.text = gameManager.popAlive.ToString();
+    }
+
+    public void ThingA()
+    {
+        if (gameManager.currentPlayerActions > 0)
+        {
+            gameManager.AdjustFunds(500);
+            gameManager.AdjustCurrentPlayerActions(-1);
+        }
+        UpdateAllTexts();
+    }
+
+    public void ThingB()
+    {
+        if (gameManager.currentPlayerActions > 0)
+        {
+            gameManager.AdjustFunds(-500);
+            gameManager.AdjustPoliticalInfluence(10);
+            gameManager.AdjustCurrentPlayerActions(-1);
+        }
+        UpdateAllTexts();
     }
 }

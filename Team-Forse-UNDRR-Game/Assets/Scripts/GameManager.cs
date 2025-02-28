@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
     public int workforceIdle { get; private set; }
     public int currentPlayerActions { get; private set; }
     public int maxPlayerActions { get; private set; }
-
     public int PoliticalInfluence { get; private set; }
 
     // Awake runs before Start
@@ -187,7 +186,7 @@ public class GameManager : MonoBehaviour
     /// Clamped between 0 and 100.
     public void AdjustPoliticalInfluence(int amount)
     {
-        PoliticalInfluence = Mathf.Clamp(PoliticalInfluence + amount, 0, 100);
+        PoliticalInfluence = Mathf.Clamp(PoliticalInfluence + amount, -100, 100);
     }
 
 }
