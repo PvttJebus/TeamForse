@@ -9,8 +9,10 @@ public class TurnsManager : MonoBehaviour
     public TurnState state { get; private set; }
     public GameManager gameManager; //{ get; private set; }
     //event manager ref goes here
+    public RandomEventsBehaviors rEventsMan;
     //Ref to Test UI
     public TestForTurnSystemUI UI;
+
     private void Start()
     {
         StartTurn();
@@ -19,7 +21,10 @@ public class TurnsManager : MonoBehaviour
     public void StartTurn()
     {
         state = TurnState.TURNSTART;
+        //income
         gameManager.AddIncomeToFunds();
+        gameManager.AdjustCurrentPlayerActions(gameManager.maxPlayerActions - gameManager.currentPlayerActions);
+        //
         UI.DisableAllObjects();
         UI.StartTurnPopup();
     }
@@ -27,16 +32,17 @@ public class TurnsManager : MonoBehaviour
     public void PreActionsPhase()
     {
         state = TurnState.PREACTIONS;
+        //
         UI.DisableAllObjects();
         UI.PreActionsPopup();
         //check for random/fixed events
-        //if(DoingEvent) {} else
-        //playerActionsEnabled
+        rEventsMan.SpawnRandomEvent();
     }
 
     public void PlayerActionsPhase()
     {
         state = TurnState.PLAYERACTIONS;
+        //
         UI.DisableAllObjects();
         UI.PlayerActionsPhase();
         //we can enable things like our "on map" events here. Unity Event?
@@ -45,6 +51,7 @@ public class TurnsManager : MonoBehaviour
     public void EndTurn()
     {
         state = TurnState.TURNEND;
+        //
         UI.DisableAllObjects();
         UI.EndTurnPopup();
         //do we still want to do all of our resource transactions at end of turn?
