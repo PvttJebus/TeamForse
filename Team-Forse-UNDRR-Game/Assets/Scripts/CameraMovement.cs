@@ -9,14 +9,17 @@ public class CameraSwitcher : MonoBehaviour
     public float smoothingSpeed;
     [Header("Camera")]
     public Vector3 defaultCameraPosition;
-    Vector3 cameraTargetPosition;
+    public Vector3 defaultCameraRotation;
+    Vector3 cameraTargetPosition, cameraTargetRotationEuler;
     Selectable currentSelection;
     Camera mainCamera; 
 
     void Start()
     {
         mainCamera = Camera.main; 
-        cameraTargetPosition = mainCamera.transform.position;
+        //these are currently camera default, we can change base position here as well.
+        cameraTargetPosition = defaultCameraPosition;
+        cameraTargetRotationEuler = defaultCameraRotation;
     }
 
     void Update()
@@ -33,6 +36,8 @@ public class CameraSwitcher : MonoBehaviour
     {
         Vector3 smoothedPosition = Vector3.Lerp(cameraTargetPosition, mainCamera.transform.position, smoothingSpeed);
         mainCamera.gameObject.transform.position = smoothedPosition;
+        Vector3 smoothedRotation = Vector3.Lerp(cameraTargetRotationEuler, mainCamera.transform.eulerAngles, smoothingSpeed);
+        mainCamera.gameObject.transform.eulerAngles = smoothedRotation;
     }
 
     private void RaycastToTrigger()
@@ -47,9 +52,16 @@ public class CameraSwitcher : MonoBehaviour
             Selectable selectable = hit.collider.gameObject.GetComponent<Selectable>();
             if (selectable != null)
             {
-                currentSelection = selectable;
-                currentSelection.Select();
-                SetTargetToSelectable(currentSelection);
+                if (currentSelection != selectable)
+                {
+                    if (currentSelection != null)
+                    {
+                        currentSelection.Unselect();
+                    }
+                    currentSelection = selectable;
+                    currentSelection.Select();
+                    SetTargetToSelectable(currentSelection);
+                }
             }
             else
             {
@@ -67,15 +79,19 @@ public class CameraSwitcher : MonoBehaviour
     {
         cameraTargetPosition = selectable.GetSelectionCameraPosition();
         print($"Camera Target Position: {cameraTargetPosition}");
-
-        //do rotation too don't just leave this comment
+        cameraTargetRotationEuler = selectable.GetSelectionCameraEuler();
+        print($"Camera Target Rotation: {cameraTargetRotationEuler}");
     }
 
     private void SetTargetToDefault()
     {
         cameraTargetPosition = defaultCameraPosition;
-        currentSelection.Unselect();
-        currentSelection = null;
+        cameraTargetRotationEuler = defaultCameraRotation;
+        if (currentSelection != null)
+        {
+            currentSelection.Unselect();
+            currentSelection = null;
+        }
     }
 
 }
