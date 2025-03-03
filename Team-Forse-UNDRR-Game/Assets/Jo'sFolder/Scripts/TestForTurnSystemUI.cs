@@ -7,13 +7,13 @@ using UnityEngine;
 public class TestForTurnSystemUI : MonoBehaviour
 {
     GameManager gameManager;
-    public GameObject startTurnPopup, preTurnPopup, playerActionsGroup, endTurnPopup;
+    public GameObject startTurnPopup, preTurnPopup, playerActionsGroup, endTurnPopup, cubesParent;
     GameObject[] AttachedGameObjects;
     public TextMeshProUGUI actionsNum, fundsNum, influenceNum, healthyPopNum;
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        AttachedGameObjects = new GameObject[] { startTurnPopup, preTurnPopup, playerActionsGroup, endTurnPopup };
+        AttachedGameObjects = new GameObject[] { startTurnPopup, preTurnPopup, playerActionsGroup, endTurnPopup, cubesParent };
     }
     public void StartTurnPopup()
     {
@@ -29,6 +29,9 @@ public class TestForTurnSystemUI : MonoBehaviour
     public void PlayerActionsPhase()
     {
         playerActionsGroup.SetActive(true);
+
+        //all selectables.enable selectable
+        cubesParent.SetActive(true);
     }
 
     public void EndTurnPopup()

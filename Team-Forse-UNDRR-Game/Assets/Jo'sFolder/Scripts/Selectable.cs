@@ -1,25 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Selectable : MonoBehaviour
 {
     public GameObject menuToSpawn;
+    //THESE ARE PUBLIC SO THEY CAN BE EASILY SET IN SCENE. USE FUNCTIONS FOR SUPPLEMENTAL SCRIPTS AT RUNTIME.
+    public Vector3 cameraOffset, cameraOffsetEuler;
+    public bool isSelected {  get; private set; }
 
-    //public MenuManager menuManager;
-    public bool isSelected;
-
-    private void OnMouseDown()
+    public Vector3 GetSelectionCameraPosition()
+    {
+        return gameObject.transform.position + cameraOffset;
+    }
+    public Vector3 GetSelectionCameraEuler()
+    {
+        return gameObject.transform.eulerAngles + cameraOffsetEuler;
+    }
+    public void Select()
     {
         isSelected = true;
-        Instantiate(menuToSpawn);
-        //menuManager.selectedObject = this;
+        if (menuToSpawn != null)
+        {
+            menuToSpawn.SetActive(true);
+        }
     }
 
     public void Unselect()
     {
         isSelected = false;
-        //menuManager.selectedObject = null;
+        if (menuToSpawn != null)
+        {
+            menuToSpawn.SetActive(false);
+        }
     }
 }
