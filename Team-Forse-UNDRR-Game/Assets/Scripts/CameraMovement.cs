@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 public class CameraSwitcher : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class CameraSwitcher : MonoBehaviour
     void Update()
     {
         // Check for left mouse button click
-        if (Input.GetMouseButtonDown(0))
+        if (UnityEngine.Input.GetMouseButtonUp(0) )
         {
             RaycastToTrigger();
         }
@@ -44,7 +46,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void RaycastToTrigger()
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition); // Cast a ray from the camera to the mouse position
+        Ray ray = mainCamera.ScreenPointToRay(UnityEngine.Input.mousePosition); // Cast a ray from the camera to the mouse position
         RaycastHit hit;
 
         // Check if the ray hits an object
@@ -70,14 +72,7 @@ public class CameraSwitcher : MonoBehaviour
                 SetTargetToDefault();
             }
 
-            //var eventData = new PointerEventData(EventSystem.current);
-            //eventData.position = Input.mousePosition;
-            //var results = new List<RaycastResult>();
-            //EventSystem.current.RaycastAll(eventData, results);
-            //if (results.Where(r => r.gameObject.layer == 6).Count() > 0) //6 being my UILayer
-            //{
-            //    Debug.Log(results[0].gameObject.name); //The UI Element
-            //}
+            
         }
         //if we didn't hit any objects, we deselect & set target to default
         else
@@ -86,15 +81,14 @@ public class CameraSwitcher : MonoBehaviour
         }
     }
 
+
     private void SetTargetToSelectable(Selectable selectable)
     {
         cameraTargetPosition = selectable.GetSelectionCameraPosition();
-        print($"Camera Target Position: {cameraTargetPosition}");
         cameraTargetRotationEuler = selectable.GetSelectionCameraEuler();
-        print($"Camera Target Rotation: {cameraTargetRotationEuler}");
     }
 
-    private void SetTargetToDefault()
+    public void SetTargetToDefault()
     {
         cameraTargetPosition = defaultCameraPosition;
         cameraTargetRotationEuler = defaultCameraRotation;

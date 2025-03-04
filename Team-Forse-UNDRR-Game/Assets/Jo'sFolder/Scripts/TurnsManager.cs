@@ -9,13 +9,16 @@ public class TurnsManager : MonoBehaviour
     public TurnState state { get; private set; }
     public GameManager gameManager; //{ get; private set; }
     //event manager ref goes here
-    public RandomEventsBehaviors rEventsMan;
+    public RandomEventsBehaviors eventsMan;
     //Ref to Test UI
     public TestForTurnSystemUI UI;
+
+    private bool isEventQueued;
 
     private void Start()
     {
         StartTurn();
+        isEventQueued = false;
     }
 
     public void StartTurn()
@@ -24,6 +27,9 @@ public class TurnsManager : MonoBehaviour
         //income
         gameManager.AddIncomeToFunds();
         gameManager.AdjustCurrentPlayerActions(gameManager.maxPlayerActions - gameManager.currentPlayerActions);
+        //events queued?
+        eventsMan.StartTurn();
+        isEventQueued = eventsMan.RunDisastersLogic();
         //
         UI.DisableAllObjects();
         UI.StartTurnPopup();
@@ -32,11 +38,18 @@ public class TurnsManager : MonoBehaviour
     public void PreActionsPhase()
     {
         state = TurnState.PREACTIONS;
+        //check for random/fixed events
+        if (eventsMan.queuedEvent != null && isEventQueued)
+        {
+            eventsMan.SpawnQueuedEvent();
+        }
+        else if (!isEventQueued)
+        {
+            eventsMan.SpawnRandomEvent();
+        }
         //
         UI.DisableAllObjects();
         UI.PreActionsPopup();
-        //check for random/fixed events
-        rEventsMan.SpawnRandomEvent();
     }
 
     public void PlayerActionsPhase()
