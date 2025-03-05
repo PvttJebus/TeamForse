@@ -28,7 +28,6 @@ public class RandomEventsBehaviors : MonoBehaviour
     private void Start()
     {
         playerHasBeenWarned = false;
-        turnsCount = -1;
     }
     public void StartTurn()
     {
@@ -64,20 +63,23 @@ public class RandomEventsBehaviors : MonoBehaviour
     public bool RunDisastersLogic()
     {
         //Disasters
-        if (turnWarningWasGiven + 4 == turnsCount)
+        if (turnWarningWasGiven + 4 <= turnsCount)
         {
             queuedEvent = DisasterEventPrefabs[(int)selectedDisaster];
             return true;
         }
 
         //Disaster Warnings
-        else if (turnsCount >= earliestDisasterWarningTurn && !playerHasBeenWarned || maxTurnsLimit - turnsCount <= 4 && !playerHasBeenWarned)
+        else if (turnsCount == 1)
         {
-            if (ShouldADisasterStrike() || maxTurnsLimit - turnsCount <= 4)
+            if ( (true)) //|| ShouldADisasterStrike() )
             {
                 selectedDisaster = SelectRandomDisaster();
                 queuedEvent = DisasterEventWarnings[(int)selectedDisaster];
-                turnWarningWasGiven = turnsCount;
+                if (!playerHasBeenWarned)
+                {
+                    turnWarningWasGiven = turnsCount;
+                }
                 playerHasBeenWarned = true;
                 return true;
             }

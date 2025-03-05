@@ -17,8 +17,8 @@ public class TurnsManager : MonoBehaviour
 
     private void Start()
     {
-        StartTurn();
         isEventQueued = false;
+        StartTurn();
     }
 
     public void StartTurn()
@@ -30,6 +30,7 @@ public class TurnsManager : MonoBehaviour
         //events queued?
         eventsMan.StartTurn();
         isEventQueued = eventsMan.RunDisastersLogic();
+        isEventQueued = true;
         //
         UI.DisableAllObjects();
         UI.StartTurnPopup();
