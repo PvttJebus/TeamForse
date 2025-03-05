@@ -58,21 +58,21 @@ public class CameraSwitcher : MonoBehaviour
             {
                 if (currentSelection != selectable)
                 {
-                    if (currentSelection != null)
-                    {
-                        currentSelection.Unselect();
-                    }
-                    currentSelection = selectable;
-                    currentSelection.Select();
-                    SetTargetToSelectable(currentSelection);
+                    SelectNewTarget(selectable);
                 }
             }
             else
             {
-                SetTargetToDefault();
+                selectable = hit.collider.gameObject.GetComponentInParent<Selectable>();
+                if(selectable != null)
+                {
+                    SelectNewTarget(selectable);
+                }
+                else
+                {
+                    SetTargetToDefault();
+                }
             }
-
-            
         }
         //if we didn't hit any objects, we deselect & set target to default
         else
@@ -81,9 +81,14 @@ public class CameraSwitcher : MonoBehaviour
         }
     }
 
-
-    private void SetTargetToSelectable(Selectable selectable)
+    private void SelectNewTarget(Selectable selectable)
     {
+        if (currentSelection != null)
+        {
+            currentSelection.Unselect();
+        }
+        currentSelection = selectable;
+        currentSelection.Select();
         cameraTargetPosition = selectable.GetSelectionCameraPosition();
         cameraTargetRotationEuler = selectable.GetSelectionCameraEuler();
     }

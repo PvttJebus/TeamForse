@@ -17,7 +17,7 @@ public class Selectable : MonoBehaviour
     }
     public Vector3 GetSelectionCameraEuler()
     {
-        return gameObject.transform.eulerAngles + cameraOffsetEuler;
+        return cameraOffsetEuler;
     }
     public void Select()
     {
