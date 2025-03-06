@@ -1,57 +1,54 @@
 using UnityEngine;
-using UnityEngine.UI; // Required for UI elements
+using UnityEngine.UI;
 
-public class Clickable : MonoBehaviour
+public class PanelSwitcher : MonoBehaviour
 {
-    [SerializeField] private GameObject panel; // Assign in Inspector
-    [SerializeField] private Image image; // Assign in Inspector
-    [SerializeField] private Button backButton; // Assign in Inspector
+    public GameObject mainPanel;
+    public GameObject[] subPanels;
+    private GameObject currentPanel;
 
     void Start()
     {
-        if (backButton != null)
-        {
-            backButton.gameObject.SetActive(false); // Hide button initially
-            backButton.onClick.AddListener(CloseUI); // Add event listener
-        }
+        CloseAllPanels();
     }
 
-    void OnMouseDown()
+    // Called when clicking an object to open the main panel
+    public void OpenMainPanel()
     {
-        Debug.Log(gameObject.name + " was clicked!");
-
-        if (panel != null)
-        {
-            panel.SetActive(true);
-            Debug.Log("Panel Activated!");
-        }
-        else
-        {
-            Debug.LogError("Panel is NOT assigned in the Inspector!");
-        }
-
-        if (image != null)
-        {
-            image.gameObject.SetActive(true);
-            Debug.Log("Image Activated!");
-        }
-        else
-        {
-            Debug.LogError("Image is NOT assigned in the Inspector!");
-        }
-
-        if (backButton != null)
-        {
-            backButton.gameObject.SetActive(true); // Show Back Button
-        }
+        mainPanel.SetActive(true);
+        currentPanel = mainPanel;
     }
 
-    void CloseUI()
+    // Called when clicking a button to switch to a specific panel
+    public void SwitchToPanel(GameObject panel)
     {
-        if (panel != null) panel.SetActive(false);
-        if (image != null) image.gameObject.SetActive(false);
-        if (backButton != null) backButton.gameObject.SetActive(false);
+        if (currentPanel != null)
+        {
+            currentPanel.SetActive(false);
+        }
+        panel.SetActive(true);
+        currentPanel = panel;
+    }
 
-        Debug.Log("UI Closed!");
+    // Called when clicking back button to return to main panel
+    public void BackToMainPanel()
+    {
+        if (currentPanel != null)
+        {
+            currentPanel.SetActive(false);
+        }
+        mainPanel.SetActive(true);
+        currentPanel = mainPanel;
+    }
+
+    // Called when clicking back button on main panel to close UI
+    public void CloseAllPanels()
+    {
+        mainPanel.SetActive(false);
+        foreach (GameObject panel in subPanels)
+        {
+            panel.SetActive(false);
+        }
+        currentPanel = null;
     }
 }

@@ -151,10 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b48b6d84d717754993d0c265f8f7236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPositions:
-  - {fileID: 1630100478}
-  - {fileID: 1507830002}
-  defaultPositionIndex: 0
+  smoothingSpeed: 0
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
 --- !u!4 &14460759
 Transform:
   m_ObjectHideFlags: 0
@@ -302,10 +301,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 443472005}
-    - targetCorrespondingSourceObject: {fileID: 5148817236446094103, guid: 61392531524df1c4081fae77d848e903,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 443472004}
     - targetCorrespondingSourceObject: {fileID: 5148817236446094103, guid: 61392531524df1c4081fae77d848e903,
         type: 3}
       insertIndex: -1
@@ -1301,21 +1296,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 90645076}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &443472004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443472000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e2ac55815696b4fba5cd027a2bf870, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 1753763724}
-  image: {fileID: 563643011}
-  backButton: {fileID: 1257411233}
 --- !u!65 &443472005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3378,6 +3358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374432510}
   - component: {fileID: 1374432511}
+  - component: {fileID: 1374432512}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -3419,6 +3400,20 @@ MonoBehaviour:
   workforceText: {fileID: 1711637314}
   actionsText: {fileID: 1577640132}
   politicalInfluencePieChart: {fileID: 1925909946}
+--- !u!114 &1374432512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374432509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e2ac55815696b4fba5cd027a2bf870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainPanel: {fileID: 0}
+  subPanels: []
 --- !u!1 &1395709783
 GameObject:
   m_ObjectHideFlags: 0
