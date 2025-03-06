@@ -456,10 +456,9 @@ GameObject:
   - component: {fileID: 135065568}
   - component: {fileID: 135065567}
   - component: {fileID: 135065566}
-  - component: {fileID: 135065570}
   - component: {fileID: 135065569}
   m_Layer: 0
-  m_Name: Cube (8)
+  m_Name: CubeE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,23 +563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &135065570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135065564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.1, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!1 &146656835
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &146656836
 Transform:
   m_ObjectHideFlags: 0
@@ -702,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
   cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!114 &146656841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,10 +1118,9 @@ GameObject:
   - component: {fileID: 312040051}
   - component: {fileID: 312040050}
   - component: {fileID: 312040049}
-  - component: {fileID: 312040053}
   - component: {fileID: 312040052}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: CubeB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1242,23 +1225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &312040053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312040047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.1, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!4 &374080152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e2dd849a32dc5af409fda719df0100fe,
@@ -1277,10 +1245,9 @@ GameObject:
   - component: {fileID: 426655421}
   - component: {fileID: 426655420}
   - component: {fileID: 426655419}
-  - component: {fileID: 426655423}
   - component: {fileID: 426655422}
   m_Layer: 0
-  m_Name: Cube (9)
+  m_Name: CubeD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1385,23 +1352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &426655423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426655417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.1, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!1 &442409292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,8 +1628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.15, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!4 &465104375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 452eda92767cc2d45a313e5362c6c37d,
@@ -1814,10 +1766,9 @@ GameObject:
   - component: {fileID: 591373069}
   - component: {fileID: 591373068}
   - component: {fileID: 591373067}
-  - component: {fileID: 591373071}
   - component: {fileID: 591373070}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: LargeCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1922,23 +1873,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &591373071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591373065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.35, y: 0.15, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!1 &645263196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,6 +2132,81 @@ MonoBehaviour:
   eventPanel: {fileID: 1407160778}
   helpButton: {fileID: 1693016432}
   ignoreButton: {fileID: 2051103755}
+--- !u!1 &818590384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818590385}
+  - component: {fileID: 818590387}
+  - component: {fileID: 818590386}
+  m_Layer: 0
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &818590385
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818590384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 986229641}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &818590386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818590384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &818590387
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818590384}
+  m_CullTransparentMesh: 1
 --- !u!1 &874971842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,6 +2345,108 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974509914}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &986229640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986229641}
+  - component: {fileID: 986229644}
+  - component: {fileID: 986229643}
+  - component: {fileID: 986229642}
+  m_Layer: 0
+  m_Name: CubeUIPopups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &986229641
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986229640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 818590385}
+  m_Father: {fileID: 1386807434}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &986229642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986229640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &986229643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986229640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &986229644
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986229640}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 112834568}
+  m_PlaneDistance: 0.1
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1021582908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,9 +3310,10 @@ Transform:
   - {fileID: 2105816560}
   - {fileID: 312040048}
   - {fileID: 2053777518}
-  - {fileID: 1602239675}
-  - {fileID: 135065565}
   - {fileID: 426655418}
+  - {fileID: 135065565}
+  - {fileID: 1602239675}
+  - {fileID: 986229641}
   m_Father: {fileID: 1515525145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1396403258
@@ -4029,10 +4143,9 @@ GameObject:
   - component: {fileID: 1602239678}
   - component: {fileID: 1602239677}
   - component: {fileID: 1602239676}
-  - component: {fileID: 1602239680}
   - component: {fileID: 1602239679}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: CubeF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4137,23 +4250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &1602239680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602239674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.1, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!1 &1605471297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5122,10 +5220,9 @@ GameObject:
   - component: {fileID: 2053777521}
   - component: {fileID: 2053777520}
   - component: {fileID: 2053777519}
-  - component: {fileID: 2053777523}
   - component: {fileID: 2053777522}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: CubeC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5230,23 +5327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &2053777523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053777517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.1, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!1 &2081586487
 GameObject:
   m_ObjectHideFlags: 0
@@ -5534,10 +5616,9 @@ GameObject:
   - component: {fileID: 2105816563}
   - component: {fileID: 2105816562}
   - component: {fileID: 2105816561}
-  - component: {fileID: 2105816565}
   - component: {fileID: 2105816564}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: CubeA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5642,23 +5723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
---- !u!114 &2105816565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105816559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4387f2a49f260204c932781380873776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToSpawn: {fileID: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffsetEuler: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: -0.2, y: 0.1, z: 0}
+  cameraOffsetEuler: {x: 25, y: 90, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
