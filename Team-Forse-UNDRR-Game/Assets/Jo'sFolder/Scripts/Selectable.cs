@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Selectable : MonoBehaviour
 {
-    public GameObject menuToSpawn;
+    public GameObject menuToEnable;
     //THESE ARE PUBLIC SO THEY CAN BE EASILY SET IN SCENE. USE FUNCTIONS FOR SUPPLEMENTAL SCRIPTS AT RUNTIME.
     public Vector3 cameraOffset, cameraOffsetEuler;
     public bool isSelected {  get; private set; }
@@ -22,18 +22,18 @@ public class Selectable : MonoBehaviour
     public void Select()
     {
         isSelected = true;
-        if (menuToSpawn != null)
+        if (menuToEnable != null)
         {
-            menuToSpawn.SetActive(true);
+            menuToEnable.SetActive(true);
         }
     }
 
     public void Unselect()
     {
         isSelected = false;
-        if (menuToSpawn != null)
+        if (menuToEnable != null)
         {
-            menuToSpawn.SetActive(false);
+            menuToEnable.SetActive(false);
         }
     }
 }
