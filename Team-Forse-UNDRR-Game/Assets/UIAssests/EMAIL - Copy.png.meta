@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa793d1016730654592c1b79f7fec77c
+guid: db270fba0cbfae94f9be4c60e6dbbf40
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ICONS-Pad_0
+      name: EMAIL - Copy_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 627
-        width: 297
-        height: 453
+        x: 21
+        y: 980
+        width: 82
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84e9e651d535914498149ffa55226aeb
-      internalID: -633872307
+      spriteID: 06d9f7c2b9549c741969b69c18cd4e51
+      internalID: 1817816023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ICONS-Pad_1
+      name: EMAIL - Copy_1
       rect:
         serializedVersion: 2
-        x: 350
-        y: 835
-        width: 240
-        height: 190
+        x: 148
+        y: 107
+        width: 616
+        height: 965
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa6a57677e495a949a688eebf1e65da6
-      internalID: -364567401
+      spriteID: 6424087e35b72094c9ea322e9f6c69a1
+      internalID: -1394196328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ICONS-Pad_2
+      name: EMAIL - Copy_2
       rect:
         serializedVersion: 2
-        x: 611
-        y: 837
-        width: 241
-        height: 185
+        x: 809
+        y: 214
+        width: 192
+        height: 858
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd456bedb0530e548a043c6fa1675766
-      internalID: 1693968685
+      spriteID: 34cd237d5a3a3bd43bd05be9866284d3
+      internalID: -102486467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ICONS-Pad_3
+      name: EMAIL - Copy_6
       rect:
         serializedVersion: 2
-        x: 356
-        y: 630
-        width: 225
-        height: 173
+        x: 15
+        y: 852
+        width: 94
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1aee1651180b09a42a9a464af618a59e
-      internalID: -1241073047
+      spriteID: bd624e5b2a46bd94a988cd6070fa551a
+      internalID: 42786976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ICONS-Pad_4
+      name: EMAIL - Copy_8
       rect:
         serializedVersion: 2
-        x: 70
-        y: 467
-        width: 98
-        height: 96
+        x: 0
+        y: 726
+        width: 121
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b8cfff66b9824458537bac449fbe94
-      internalID: 2008591505
+      spriteID: ed143d6a92f8ee14b8f7fd91665b0ae1
+      internalID: 1651356910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ICONS-Pad_5
+      name: EMAIL - Copy_9
       rect:
         serializedVersion: 2
-        x: 223
-        y: 437
-        width: 143
-        height: 144
+        x: 21
+        y: 596
+        width: 110
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aca36db36eda55941be599cb949aee95
-      internalID: 1759143016
+      spriteID: fc91015419fc5564ab2c23957053cc4b
+      internalID: -808442217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ICONS-Pad_6
+      name: EMAIL - Copy_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 327
-        width: 84
-        height: 67
+        x: 19
+        y: 426
+        width: 83
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,134 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3d16f254cb17f342b491f95e8fc8de8
-      internalID: -252696345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ICONS-Pad_7
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 340
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3542e68ba4c54c418a6834df61ace14
-      internalID: 832692187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ICONS-Pad_8
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 338
-        width: 335
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9b585ad47e21514293217dd77098728
-      internalID: 1192494351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ICONS-Pad_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 206
-        width: 85
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcefe6dbafebe294db4c08ebd4662758
-      internalID: -1523014831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ICONS-Pad_10
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 217
-        width: 328
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09180653068bb5d44b1768fb2746fc22
-      internalID: 76596870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ICONS-Pad_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 86
-        width: 67
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e8c9dcf1786df644ae2ce9cbbdbf5c5
-      internalID: 1472832048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ICONS-Pad_12
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 106
-        width: 345
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f520c65d3fa3b2748a91c4f62565e2bd
-      internalID: -976252230
+      spriteID: 4d258332f9176c64c8f88ca3eb56f944
+      internalID: -568948919
       vertices: []
       indices: 
       edges: []
@@ -372,7 +246,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7094941deb5024542b841280031043c2
+    spriteID: 2871af3319767bd41abd2728cd9bbe34
     internalID: 0
     vertices: []
     indices: 
@@ -380,19 +254,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ICONS-Pad_0: -633872307
-      ICONS-Pad_1: -364567401
-      ICONS-Pad_10: 76596870
-      ICONS-Pad_11: 1472832048
-      ICONS-Pad_12: -976252230
-      ICONS-Pad_2: 1693968685
-      ICONS-Pad_3: -1241073047
-      ICONS-Pad_4: 2008591505
-      ICONS-Pad_5: 1759143016
-      ICONS-Pad_6: -252696345
-      ICONS-Pad_7: 832692187
-      ICONS-Pad_8: 1192494351
-      ICONS-Pad_9: -1523014831
+      EMAIL - Copy_0: 1817816023
+      EMAIL - Copy_1: -1394196328
+      EMAIL - Copy_10: -568948919
+      EMAIL - Copy_2: -102486467
+      EMAIL - Copy_3: -1583410201
+      EMAIL - Copy_4: 583541109
+      EMAIL - Copy_5: 923263085
+      EMAIL - Copy_6: 42786976
+      EMAIL - Copy_7: -78271815
+      EMAIL - Copy_8: 1651356910
+      EMAIL - Copy_9: -808442217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
