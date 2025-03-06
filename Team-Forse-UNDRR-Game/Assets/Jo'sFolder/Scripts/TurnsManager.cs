@@ -31,9 +31,9 @@ public class TurnsManager : MonoBehaviour
         eventsMan.StartTurn();
         isEventQueued = eventsMan.RunDisastersLogic();
         isEventQueued = true;
-        //
-        UI.DisableAllObjects();
-        UI.StartTurnPopup();
+        ////
+        //UI.DisableAllObjects();
+        //UI.StartTurnPopup();
     }
 
     public void PreActionsPhase()
@@ -48,27 +48,50 @@ public class TurnsManager : MonoBehaviour
         {
             eventsMan.SpawnRandomEvent();
         }
-        //
-        UI.DisableAllObjects();
-        UI.PreActionsPopup();
+        ////
+        //UI.DisableAllObjects();
+        //UI.PreActionsPopup();
     }
 
     public void PlayerActionsPhase()
     {
         state = TurnState.PLAYERACTIONS;
-        //
-        UI.DisableAllObjects();
-        UI.PlayerActionsPhase();
+        ////
+        //UI.DisableAllObjects();
+        //UI.PlayerActionsPhase();
         //we can enable things like our "on map" events here. Unity Event?
     }
 
     public void EndTurn()
     {
         state = TurnState.TURNEND;
-        //
-        UI.DisableAllObjects();
-        UI.EndTurnPopup();
+        ////
+        //UI.DisableAllObjects();
+        //UI.EndTurnPopup();
         //do we still want to do all of our resource transactions at end of turn?
         //we can trigger an event here really easily to do both that and our proper end of turn things like a disaster.
+    }
+
+    public void GoToNextPhase()
+    {
+        switch (state)
+        {
+            case TurnState.TURNSTART:
+                state = TurnState.PREACTIONS;
+                PreActionsPhase();
+                break;
+            case TurnState.PREACTIONS:
+                state = TurnState.PLAYERACTIONS;
+                PlayerActionsPhase();
+                break;
+            case TurnState.PLAYERACTIONS:
+                state = TurnState.TURNEND;
+                EndTurn();
+                break;
+            case TurnState.TURNEND:
+                state = TurnState.TURNSTART;
+                StartTurn();
+                break;
+        }
     }
 }
