@@ -3,7 +3,12 @@ guid: 5eef410a0f2f74e4a81c55a32d02047d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - backgroundMusic: {fileID: 8300000, guid: 11d8a938fbd28d54eadbf48a664e58a6, type: 3}
+  - clickSFX: {fileID: 8300000, guid: 0237d4303a2a9a943a72dfc35f6318f8, type: 3}
+  - confirmSFX: {fileID: 8300000, guid: 4cbc96facb12dab4691f7cb52940098c, type: 3}
+  - iPadSFX: {fileID: 8300000, guid: 6f51d7684cbc0cc4eae218fdb8ff3da3, type: 3}
+  - warningSFX: {fileID: 8300000, guid: c21a8a299c023664da0caecdf96c8e6b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

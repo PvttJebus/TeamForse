@@ -12,6 +12,10 @@ public class AudioManager : MonoBehaviour
     //
     public AudioClip backgroundMusic;
     public AudioClip clickSFX;
+    //public AudioClip confirmSFX;
+    //public AudioClip iPadSFX;
+    //public AudioClip warningSFX;
+
 
     //
     private AudioSource BGMAudioSource, clickSFXAudioSource;
@@ -41,6 +45,7 @@ public class AudioManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             PlayClick();
+            Debug.Log("yes");
         }
     }
 
