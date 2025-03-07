@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c90128a1ffdf94ea22e6074e6fbe54, type: 3}
+  m_Name: E03_ForAid
+  m_EditorClassIdentifier: 
+  eventName: 'Foreign Disaster Aid '
+  description: "A neighbouring country, Realplacia, has been struck by a catastrophic
+    8.5 magnitude earthquake, leaving thousands dead and critical infrastructure
+    in ruins. NGOs and international organizations are mobilizing relief efforts
+    and have requested your city\u2019s financial and logistical support to aid in
+    rescue and recovery operations.\r\n\r\nHowever, a recent investigate report has
+    exposed severe corruption within Realplacia\u2019s government. Past foreign aid
+    has been misused for personal enrichment, and there\u2019s no guarantee that
+    donated funds will reach the people in need.\r\n\r\nWith limited resources, your
+    administration must decide whether to send aid despite the risks or withhold
+    assistance, prioritizing domestic stability.\r\n"
+  choices:
+  - choiceText: Provide Humanitarian Aid
+    cashChange: -20
+    incomeChange: 0
+    fatalityRiskChange: 0
+    injuryRiskChange: 0.3
+    actionPointCost: 0
+    influenceChange: 10
+    outcomeDescription: 
+  - choiceText: Refuse Aid & Prioritize Domestic Resources
+    cashChange: 0
+    incomeChange: 0
+    fatalityRiskChange: 0
+    injuryRiskChange: 0
+    actionPointCost: 0
+    influenceChange: -5
+    outcomeDescription: 
+  eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
+    type: 3}
+  minTurn: 4
+  maxTurn: 4
