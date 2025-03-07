@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         UpdateUI();
     }
 

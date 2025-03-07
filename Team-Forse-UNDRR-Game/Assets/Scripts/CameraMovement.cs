@@ -1,6 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 public class CameraSwitcher : MonoBehaviour
 {
@@ -25,7 +29,7 @@ public class CameraSwitcher : MonoBehaviour
     void Update()
     {
         // Check for left mouse button click
-        if (Input.GetMouseButtonDown(0))
+        if (UnityEngine.Input.GetMouseButtonUp(0) )
         {
             RaycastToTrigger();
         }
@@ -42,7 +46,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void RaycastToTrigger()
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition); // Cast a ray from the camera to the mouse position
+        Ray ray = mainCamera.ScreenPointToRay(UnityEngine.Input.mousePosition); // Cast a ray from the camera to the mouse position
         RaycastHit hit;
 
         // Check if the ray hits an object
@@ -54,18 +58,20 @@ public class CameraSwitcher : MonoBehaviour
             {
                 if (currentSelection != selectable)
                 {
-                    if (currentSelection != null)
-                    {
-                        currentSelection.Unselect();
-                    }
-                    currentSelection = selectable;
-                    currentSelection.Select();
-                    SetTargetToSelectable(currentSelection);
+                    SelectNewTarget(selectable);
                 }
             }
             else
             {
-                SetTargetToDefault();
+                selectable = hit.collider.gameObject.GetComponentInParent<Selectable>();
+                if(selectable != null)
+                {
+                    SelectNewTarget(selectable);
+                }
+                else
+                {
+                    SetTargetToDefault();
+                }
             }
         }
         //if we didn't hit any objects, we deselect & set target to default
@@ -75,15 +81,19 @@ public class CameraSwitcher : MonoBehaviour
         }
     }
 
-    private void SetTargetToSelectable(Selectable selectable)
+    private void SelectNewTarget(Selectable selectable)
     {
+        if (currentSelection != null)
+        {
+            currentSelection.Unselect();
+        }
+        currentSelection = selectable;
+        currentSelection.Select();
         cameraTargetPosition = selectable.GetSelectionCameraPosition();
-        print($"Camera Target Position: {cameraTargetPosition}");
         cameraTargetRotationEuler = selectable.GetSelectionCameraEuler();
-        print($"Camera Target Rotation: {cameraTargetRotationEuler}");
     }
 
-    private void SetTargetToDefault()
+    public void SetTargetToDefault()
     {
         cameraTargetPosition = defaultCameraPosition;
         cameraTargetRotationEuler = defaultCameraRotation;
