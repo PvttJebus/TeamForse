@@ -37,19 +37,19 @@ public class UIManager : MonoBehaviour
    public void UpdateUI()
     {
         // Update City Funds
-        cityFundsText.text = $"Funds: ${gameManager.cityFunds:F2}";
+        cityFundsText.text = $"{gameManager.cityFunds:F2}";
 
         // Update Population
-        popAliveText.text = $"Alive: {gameManager.popAlive}";
-        popInjuredText.text = $"Injured: {gameManager.popInjured}";
-        popDeadText.text = $"Dead: {gameManager.popDead}";
+        popAliveText.text = $"{gameManager.popAlive}";
+        popInjuredText.text = $"{gameManager.popInjured}";
+        popDeadText.text = $"{gameManager.popDead}";
 
         // Update Workforce
         int totalWorkforce = gameManager.workforceActive + gameManager.workforceIdle;
-        workforceText.text = $"Workforce: {gameManager.workforceIdle}/{gameManager.workforceTotal}";
+        workforceText.text = $"{gameManager.workforceIdle}/{gameManager.workforceTotal}";
 
         // Update Actions
-        actionsText.text = $"Actions: {gameManager.currentPlayerActions}/{gameManager.maxPlayerActions}";
+        actionsText.text = $"{gameManager.currentPlayerActions}/{gameManager.maxPlayerActions}";
 
         // Update Political Influence Pie Chart (Normalized)
         float influencePercent = gameManager.PoliticalInfluence / 100f;
