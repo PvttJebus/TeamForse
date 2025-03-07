@@ -5,6 +5,7 @@ public class PanelSwitcher : MonoBehaviour
 {
     public GameObject mainPanel;
     public GameObject[] subPanels;
+    public GameObject defaultCanvas; // The canvas to disable when opening the main panel
     private GameObject currentPanel;
 
     void Start()
@@ -12,14 +13,33 @@ public class PanelSwitcher : MonoBehaviour
         CloseAllPanels();
     }
 
-    // Called when clicking an object to open the main panel
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) // Left Mouse Click
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.CompareTag("ClickableObject")) // Tag your object as "ClickableObject"
+                {
+                    OpenMainPanel();
+                }
+            }
+        }
+    }
+
     public void OpenMainPanel()
     {
+        if (defaultCanvas != null)
+        {
+            defaultCanvas.SetActive(false); // Disable the default canvas
+        }
         mainPanel.SetActive(true);
         currentPanel = mainPanel;
     }
 
-    // Called when clicking a button to switch to a specific panel
     public void SwitchToPanel(GameObject panel)
     {
         if (currentPanel != null)
@@ -30,7 +50,6 @@ public class PanelSwitcher : MonoBehaviour
         currentPanel = panel;
     }
 
-    // Called when clicking back button to return to main panel
     public void BackToMainPanel()
     {
         if (currentPanel != null)
@@ -41,7 +60,6 @@ public class PanelSwitcher : MonoBehaviour
         currentPanel = mainPanel;
     }
 
-    // Called when clicking back button on main panel to close UI
     public void CloseAllPanels()
     {
         mainPanel.SetActive(false);
@@ -50,5 +68,10 @@ public class PanelSwitcher : MonoBehaviour
             panel.SetActive(false);
         }
         currentPanel = null;
+
+        if (defaultCanvas != null)
+        {
+            defaultCanvas.SetActive(true); // Re-enable the default canvas when all panels are closed
+        }
     }
 }

@@ -9,7 +9,7 @@ public class Selectable : MonoBehaviour
     public GameObject menuToSpawn;
     //THESE ARE PUBLIC SO THEY CAN BE EASILY SET IN SCENE. USE FUNCTIONS FOR SUPPLEMENTAL SCRIPTS AT RUNTIME.
     public Vector3 cameraOffset, cameraOffsetEuler;
-    public bool isSelected {  get; private set; }
+    public bool isSelected { get; private set; }
 
     public Vector3 GetSelectionCameraPosition()
     {
