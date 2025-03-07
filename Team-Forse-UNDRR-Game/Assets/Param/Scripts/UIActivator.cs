@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class PanelSwitcher : MonoBehaviour
 {
@@ -24,18 +25,19 @@ public class PanelSwitcher : MonoBehaviour
             {
                 if (hit.collider.CompareTag("ClickableObject")) // Tag your object as "ClickableObject"
                 {
-                    OpenMainPanel();
+                    StartCoroutine(OpenMainPanelWithDelay());
                 }
             }
         }
     }
 
-    public void OpenMainPanel()
+    private IEnumerator OpenMainPanelWithDelay()
     {
         if (defaultCanvas != null)
         {
             defaultCanvas.SetActive(false); // Disable the default canvas
         }
+        yield return new WaitForSeconds(1f); // 1-second delay
         mainPanel.SetActive(true);
         currentPanel = mainPanel;
     }
