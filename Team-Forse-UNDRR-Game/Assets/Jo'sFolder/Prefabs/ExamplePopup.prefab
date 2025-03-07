@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -585,19 +585,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5990420906814787240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7071626176500255170}
-        m_TargetAssemblyTypeName: EventBehaviors, Assembly-CSharp
-        m_MethodName: DestroyMe
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2723238051086920970
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +696,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 4
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -822,6 +810,7 @@ GameObject:
   - component: {fileID: 9163408415624898767}
   - component: {fileID: 4086827167825785747}
   - component: {fileID: 7071626176500255170}
+  - component: {fileID: 4210839488401914596}
   m_Layer: 0
   m_Name: ExamplePopup
   m_TagString: Untagged
@@ -856,7 +845,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6119095688199793028}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!114 &4086827167825785747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +888,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f201bd6e89ffbd4dba3fa55642352f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4210839488401914596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6119095688199793028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191faf04dcd16304497f9094aad2bebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assignedEvent: {fileID: 0}
+  titleText: {fileID: 8033866655462804027}
+  descriptionText: {fileID: 5361348820571395211}
+  thingAButton: {fileID: 8421955656490988992}
+  thingAText: {fileID: 487209745176578129}
+  thingBButton: {fileID: 5788000760922629258}
+  thingBText: {fileID: 3331359790914429152}
 --- !u!1 &6269729215474117058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1197,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 4
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5428ce7f1547ed34eafcfeaf4835560e, type: 3}
+  m_Name: D01_Hurricane
+  m_EditorClassIdentifier: 
+  eventName: 'Hurricane '
+  description: 
+  choices:
+  - choiceText: 
+    cashChange: 0
+    incomeChange: 0
+    fatalityRiskChange: 0
+    injuryRiskChange: 0
+    actionPointCost: 0
+    influenceChange: 0
+    outcomeDescription: 
+  - choiceText: 
+    cashChange: 0
+    incomeChange: 0
+    fatalityRiskChange: 0
+    injuryRiskChange: 0
+    actionPointCost: 0
+    influenceChange: 0
+    outcomeDescription: 
+  - choiceText: 
+    cashChange: 0
+    incomeChange: 0
+    fatalityRiskChange: 0
+    injuryRiskChange: 0
+    actionPointCost: 0
+    influenceChange: 0
+    outcomeDescription: 
+  eventPrefab: {fileID: 1378834742176523407, guid: 4c95f57e7f0f410408d537c6127d1bfd,
+    type: 3}
+  endsTheGame: 1
+  disasterTurn: 5
