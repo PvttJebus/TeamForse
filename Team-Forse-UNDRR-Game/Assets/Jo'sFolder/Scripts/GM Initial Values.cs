@@ -5,7 +5,7 @@ using UnityEngine;
 public class GMInitialValues : MonoBehaviour
 {
     [SerializeField]
-    public int funds, maxActions, influence, population;
+    public int funds, income, maxActions, influence, population;
     GameManager gameManager;
 
 
@@ -13,6 +13,7 @@ public class GMInitialValues : MonoBehaviour
     {
         gameManager = GetComponent<GameManager>();
         gameManager.AdjustFunds(funds);
+        gameManager.AdjustIncome(income);
         gameManager.AdjustMaxPlayerActions(maxActions);
         gameManager.AdjustPoliticalInfluence(influence);
         gameManager.AdjustPopulation(population);
