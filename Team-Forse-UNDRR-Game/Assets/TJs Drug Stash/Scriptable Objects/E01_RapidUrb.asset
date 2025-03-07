@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c90128a1ffdf94ea22e6074e6fbe54, type: 3}
+  m_Name: E01_RapidUrb
+  m_EditorClassIdentifier: 
+  eventName: Rapid Urbanization
+  description: "Due to economic growth, the city has expanded rapidly, with many
+    high-rise buildings and coastal developments constructed quickly to meet housing
+    demands. However, most were built without climate-resilient designs, leaving
+    them highly vulnerable to rising sea levels, stronger typhoons, and extreme heat
+    waves. Scientists warn that within the next decade, severe climate events could
+    make large parts of the city uninhabitable. \n\nGovernment officials must decide
+    whether to enforce climate adaptation measures at a high cost or focus on immediate
+    economic expansion, risking long-term devastation.\n"
+  choices:
+  - choiceText: Enforce climate-resilient building standards
+    cashChange: 40
+    incomeChange: 0
+    fatalityRiskChange: 0.05
+    injuryRiskChange: 0.1
+    actionPointCost: 0
+    influenceChange: 10
+    outcomeDescription: 
+  - choiceText: Prioritize Economic Growth & Expansion
+    cashChange: 0
+    incomeChange: 30
+    fatalityRiskChange: -0.1
+    injuryRiskChange: -0.2
+    actionPointCost: 0
+    influenceChange: -10
+    outcomeDescription: 
+  eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
+    type: 3}
+  minTurn: 2
+  maxTurn: 2

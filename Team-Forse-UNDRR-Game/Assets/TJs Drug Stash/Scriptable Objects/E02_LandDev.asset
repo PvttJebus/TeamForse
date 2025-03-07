@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c90128a1ffdf94ea22e6074e6fbe54, type: 3}
+  m_Name: E02_LandDev
+  m_EditorClassIdentifier: 
+  eventName: Land Development
+  description: "\r\nThe federal government has recently released a prime plot of
+    land back to the city, located in a high-traffic coastal area near the business
+    district and beachfront. Due to its strategic location, multiple entities are
+    interested in securing the land for vastly different purposes:\r\n\r\n- A powerful
+    corporation, Amazon has proposed purchasing the land for $100M to develop a high-end
+    commercial and residential complex. This would boost the city\u2019s economy
+    but increase population density in a high-risk flood zone.\r\n- The city\u2019s
+    top university wants to lease the land to establish a climate research and disaster
+    preparedness facility. This would provide critical data to improve disaster forecasting
+    but comes with far less immediate financial gain.\r\n"
+  choices:
+  - choiceText: Sell the land
+    cashChange: 100
+    incomeChange: 0
+    fatalityRiskChange: -0.2
+    injuryRiskChange: -0.2
+    actionPointCost: 1
+    influenceChange: -10
+    outcomeDescription: 
+  - choiceText: Lease the land
+    cashChange: 0
+    incomeChange: 1
+    fatalityRiskChange: 0.2
+    injuryRiskChange: 0.2
+    actionPointCost: 1
+    influenceChange: 10
+    outcomeDescription: 
+  eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
+    type: 3}
+  minTurn: 3
+  maxTurn: 3

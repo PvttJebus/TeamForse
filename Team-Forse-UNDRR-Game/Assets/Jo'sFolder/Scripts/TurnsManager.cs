@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum TurnState { TURNSTART, PREACTIONS, PLAYERACTIONS, TURNEND };
+
 public class TurnsManager : MonoBehaviour
 {
     public int turnCount;
