@@ -12,13 +12,12 @@ public class AudioManager : MonoBehaviour
     //
     public AudioClip backgroundMusic;
     public AudioClip clickSFX;
-    //public AudioClip confirmSFX;
-    //public AudioClip iPadSFX;
-    //public AudioClip warningSFX;
-
+    public AudioClip WarningSFX;
+    public AudioClip iPadSelectSFX;
 
     //
-    private AudioSource BGMAudioSource, clickSFXAudioSource;
+    private AudioSource BGMAudioSource;
+    private AudioSource clickSFXAudioSource;
 
     private void Awake()
     {
@@ -42,15 +41,10 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonUp(0))
+        clickSFXAudioSource = GetComponent<AudioSource>();
+        if (Input.GetMouseButtonDown(0))
         {
-            PlayClick();
-            Debug.Log("yes");
+            clickSFXAudioSource.Play();
         }
-    }
-
-    private void PlayClick()
-    {
-        clickSFXAudioSource.Play(); 
     }
 }
