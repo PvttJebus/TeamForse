@@ -51,6 +51,6 @@ public class AudioManager : MonoBehaviour
 
     private void PlayClick()
     {
-        clickSFXAudioSource.PlayOneShot(clickSFX);
+        clickSFXAudioSource.Play(); 
     }
 }
