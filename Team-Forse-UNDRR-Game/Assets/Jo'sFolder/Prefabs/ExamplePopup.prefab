@@ -809,7 +809,6 @@ GameObject:
   - component: {fileID: 2786883656103659469}
   - component: {fileID: 9163408415624898767}
   - component: {fileID: 4086827167825785747}
-  - component: {fileID: 7071626176500255170}
   - component: {fileID: 4210839488401914596}
   m_Layer: 0
   m_Name: ExamplePopup
@@ -876,18 +875,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7071626176500255170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6119095688199793028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f201bd6e89ffbd4dba3fa55642352f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4210839488401914596
 MonoBehaviour:
   m_ObjectHideFlags: 0

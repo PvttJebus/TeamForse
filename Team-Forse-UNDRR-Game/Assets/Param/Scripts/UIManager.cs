@@ -21,11 +21,11 @@ public class UIManager : MonoBehaviour
     [Header("Political Influence UI")]
     public Image politicalInfluencePieChart; // Pie chart fill
 
-    private GameManager gameManager;
+    public EventManager eventManager;
 
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+        eventManager = FindObjectOfType<EventManager>().GetComponent<EventManager>();
         UpdateUI();
     }
 
@@ -37,22 +37,22 @@ public class UIManager : MonoBehaviour
    public void UpdateUI()
     {
         // Update City Funds
-        cityFundsText.text = $"{gameManager.cityFunds:F2}";
+        cityFundsText.text = $"{eventManager.playerCash}";
 
         // Update Population
-        popAliveText.text = $"{gameManager.popAlive}";
-        popInjuredText.text = $"{gameManager.popInjured}";
-        popDeadText.text = $"{gameManager.popDead}";
+        popAliveText.text = $"{eventManager.currentPopulation}";
+        //popInjuredText.text = $"{eventManager.popInjured}";
+        //popDeadText.text = $"{eventManager.popDead}";
 
         // Update Workforce
-        int totalWorkforce = gameManager.workforceActive + gameManager.workforceIdle;
-        workforceText.text = $"{gameManager.workforceIdle}/{gameManager.workforceTotal}";
+        //int totalWorkforce = eventManager.workforceActive + eventManager.workforceIdle;
+        //workforceText.text = $"{eventManager.workforceIdle}/{eventManager.workforceTotal}";
 
         // Update Actions
-        actionsText.text = $"{gameManager.currentPlayerActions}/{gameManager.maxPlayerActions}";
+        actionsText.text = $"{eventManager.playerActionPoints}";
 
         // Update Political Influence Pie Chart (Normalized)
-        float influencePercent = gameManager.PoliticalInfluence / 100f;
+        float influencePercent = eventManager.influence / 100f;
         politicalInfluencePieChart.fillAmount = influencePercent;
     }
 }
