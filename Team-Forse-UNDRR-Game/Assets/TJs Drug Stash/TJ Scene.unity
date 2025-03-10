@@ -1831,7 +1831,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 335290181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 465104379}
+        m_TargetAssemblyTypeName: BuildingInteraction, Assembly-CSharp
+        m_MethodName: OnBuildingAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &335290181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2415,7 +2427,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 438149441}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602239680}
+        m_TargetAssemblyTypeName: BuildingInteraction, Assembly-CSharp
+        m_MethodName: OnBuildingAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &438149441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2825,7 +2849,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 484159772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 591373071}
+        m_TargetAssemblyTypeName: BuildingInteraction, Assembly-CSharp
+        m_MethodName: OnBuildingAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &484159772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4259,6 +4295,7 @@ GameObject:
   - component: {fileID: 802245293}
   - component: {fileID: 802245295}
   - component: {fileID: 802245296}
+  - component: {fileID: 802245297}
   m_Layer: 0
   m_Name: Turns & Random Events
   m_TagString: Untagged
@@ -4377,6 +4414,23 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
+--- !u!114 &802245297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802245289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &818590384
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,7 +9174,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2023333460}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 238054684}
+        m_TargetAssemblyTypeName: BuildingInteraction, Assembly-CSharp
+        m_MethodName: OnBuildingAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2023333460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9855,6 +9921,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602241835590679032, guid: 04180d2f8af0fea4f8e6fa87b47be5d7,
+        type: 3}
+      propertyPath: eventManager
+      value: 
+      objectReference: {fileID: 802245293}
     - target: {fileID: 5598640874690215712, guid: 04180d2f8af0fea4f8e6fa87b47be5d7,
         type: 3}
       propertyPath: defaultCanvas
