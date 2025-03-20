@@ -19,6 +19,7 @@ public class EventManager : MonoBehaviour
     public int playerIncome;
     public float totalFatalityRiskReduction;
     public float totalInjuryRiskReduction;
+    public float currentPopulation;
     public int playerActionPoints;
     public int influence;
 
@@ -46,11 +47,6 @@ public class EventManager : MonoBehaviour
                   $"FatalityRisk: {totalFatalityRiskReduction}, InjuryRisk: {totalInjuryRiskReduction}, " +
                   $"ActionPoints: {playerActionPoints}, Influence: {influence}");
     }
-
-    // ---------------------------------------------------------
-    // The rest of the code remains unchanged except we call UpdateResources
-    // in OnChoiceSelected instead of directly incrementing the fields.
-    // ---------------------------------------------------------
 
     public void CheckEventsForTurn(int turnNumber)
     {

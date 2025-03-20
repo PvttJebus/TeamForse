@@ -14,9 +14,6 @@ public class PlayerTurnsManager : MonoBehaviour
     [Header("Managers & References")]
     public EventManager eventManager;
 
-    // If you have a GameManager that tracks resources, action points, etc.
-    public GameManager gameManager;
-
     // This is the official turn counter for the game
     [Header("Turn Tracking")]
     public int currentTurn;
@@ -45,16 +42,6 @@ public class PlayerTurnsManager : MonoBehaviour
         // Move to TURNSTART state
         state = TurnState.TURNSTART;
 
-        // If you have a GameManager that handles resources/actions, do that logic here
-        if (gameManager != null)
-        {
-            // Example: add income
-            gameManager.AddIncomeToFunds();
-
-            // Example: refill action points
-            int actionsNeeded = gameManager.maxPlayerActions - gameManager.currentPlayerActions;
-            gameManager.AdjustCurrentPlayerActions(actionsNeeded);
-        }
 
         // Update the EventManager with the *latest* turn number (no increments in EventManager).
         // The EventManager can check events for this turn.

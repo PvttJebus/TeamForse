@@ -8,6 +8,7 @@ public class EventPopupUI : MonoBehaviour
 {
     [Header("Attach the ScriptableObject Here (optional)")]
     public GameEventBase assignedEvent;
+    public EventManager eventManager;
     // or RandomEvent / DisasterEvent if you want a specific type
 
     [Header("UI References")]
@@ -74,9 +75,7 @@ public class EventPopupUI : MonoBehaviour
     /// </summary>
     private void OnChoiceClicked(GameEventBase ev, int choiceIndex)
     {
-        // For example:
-        FindObjectOfType<EventManager>().OnChoiceSelected(ev, choiceIndex);
-        // Then optionally close/hide the popup:
+        ev.OnChoiceSelected(choiceIndex);
         Destroy(gameObject);
     }
 }
