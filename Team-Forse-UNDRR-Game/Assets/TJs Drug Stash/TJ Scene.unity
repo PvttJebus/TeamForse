@@ -8646,6 +8646,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5598640874690215712, guid: 04180d2f8af0fea4f8e6fa87b47be5d7,
         type: 3}
+      propertyPath: turnCanvas
+      value: 
+      objectReference: {fileID: 105171657}
+    - target: {fileID: 5598640874690215712, guid: 04180d2f8af0fea4f8e6fa87b47be5d7,
+        type: 3}
       propertyPath: defaultCanvas
       value: 
       objectReference: {fileID: 324402862}

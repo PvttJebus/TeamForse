@@ -6,7 +6,8 @@ public class PanelSwitcher : MonoBehaviour
 {
     public GameObject mainPanel;
     public GameObject[] subPanels;
-    public GameObject defaultCanvas; // The canvas to disable when opening the main panel
+    public GameObject defaultCanvas;
+    public GameObject turnCanvas;// The canvas to disable when opening the main panel
     private GameObject currentPanel;
 
     void Start()
@@ -36,6 +37,10 @@ public class PanelSwitcher : MonoBehaviour
         if (defaultCanvas != null)
         {
             defaultCanvas.SetActive(false); // Disable the default canvas
+        }
+        if (turnCanvas != null)
+        {
+            turnCanvas.SetActive(false); // Disable the turns canvas
         }
         yield return new WaitForSeconds(1f); // 1-second delay
         mainPanel.SetActive(true);
