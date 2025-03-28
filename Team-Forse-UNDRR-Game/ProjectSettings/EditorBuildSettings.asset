@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/TJs Drug Stash/Start.unity
+    guid: 6d2129809efbc384ea9e76d97a326d4c
+  - enabled: 1
+    path: Assets/TJs Drug Stash/TJ Scene.unity
+    guid: 66639065cd17c4d45b03b09aeec1a9de
   m_configObjects: {}
