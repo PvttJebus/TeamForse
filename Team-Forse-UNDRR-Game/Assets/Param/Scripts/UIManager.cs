@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
         cityFundsText.text = $"{eventManager.playerCash}";
 
         // Update Population
-        popAliveText.text = $"{eventManager.currentPopulation}";
+      //  popAliveText.text = $"{eventManager.currentPopulation}";
         //popInjuredText.text = $"{eventManager.popInjured}";
         //popDeadText.text = $"{eventManager.popDead}";
 
