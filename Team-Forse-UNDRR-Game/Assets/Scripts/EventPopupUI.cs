@@ -13,6 +13,7 @@ public class EventPopupUI : MonoBehaviour
 
     [Header("UI References")]
     public TextMeshProUGUI titleText;      // drag the title TMP from the prefab
+    public Image ImageObject;
     public TextMeshProUGUI descriptionText; // middle panel TMP
     public Button thingAButton;           // for the "Thing A" button
     public TextMeshProUGUI thingAText;    // text on the button
@@ -41,6 +42,11 @@ public class EventPopupUI : MonoBehaviour
 
         if (descriptionText != null)
             descriptionText.text = gameEvent.description;
+
+        if (ImageObject != null)
+        {
+            ImageObject.sprite = gameEvent.imageData;
+        }
 
         // If you have multiple choices, you might read gameEvent.choices[0], etc.
         // Example: show the first two choices on ThingA / ThingB

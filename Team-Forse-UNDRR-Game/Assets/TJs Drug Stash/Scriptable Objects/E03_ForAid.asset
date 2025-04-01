@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: E03_ForAid
   m_EditorClassIdentifier: 
   eventName: 'Foreign Disaster Aid '
+  imageData: {fileID: 0}
   description: "A neighbouring country, Realplacia, has been struck by a catastrophic
     8.5 magnitude earthquake, leaving thousands dead and critical infrastructure
     in ruins. NGOs and international organizations are mobilizing relief efforts
@@ -31,7 +32,8 @@ MonoBehaviour:
     injuryRiskChange: 0.3
     actionPointCost: 0
     influenceChange: 10
-    outcomeDescription: 
+    outcomeDescription: E03 Outcome 1
+    endingText: E03 Outcome 2
   - choiceText: Refuse Aid & Prioritize Domestic Resources
     cashChange: 0
     incomeChange: 0
@@ -40,7 +42,9 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: -5
     outcomeDescription: 
+    endingText: 
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
+  isActive: 0
   minTurn: 4
   maxTurn: 4

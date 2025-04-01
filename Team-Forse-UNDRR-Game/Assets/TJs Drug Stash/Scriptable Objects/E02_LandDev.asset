@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: E02_LandDev
   m_EditorClassIdentifier: 
   eventName: Land Development
+  imageData: {fileID: 0}
   description: "\r\nThe federal government has recently released a prime plot of
     land back to the city, located in a high-traffic coastal area near the business
     district and beachfront. Due to its strategic location, multiple entities are
@@ -31,7 +32,8 @@ MonoBehaviour:
     injuryRiskChange: -0.2
     actionPointCost: 1
     influenceChange: -10
-    outcomeDescription: 
+    outcomeDescription: E02 Outcome 1
+    endingText: E02 Outcome 2
   - choiceText: Lease the land
     cashChange: 0
     incomeChange: 1
@@ -40,7 +42,9 @@ MonoBehaviour:
     actionPointCost: 1
     influenceChange: 10
     outcomeDescription: 
+    endingText: 
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
+  isActive: 0
   minTurn: 3
   maxTurn: 3

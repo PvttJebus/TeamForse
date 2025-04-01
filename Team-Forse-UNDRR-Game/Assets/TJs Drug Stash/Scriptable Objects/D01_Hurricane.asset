@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: D01_Hurricane
   m_EditorClassIdentifier: 
   eventName: 'Hurricane '
-  description: 
+  imageData: {fileID: 21300000, guid: 9c8ae84824005b84399ad06965af9553, type: 3}
+  description: 'A Hurricane is approaching your city!
+
+    Let''s hope everything
+    is well prepared...'
   choices:
-  - choiceText: 
+  - choiceText: Continue...
     cashChange: 0
     incomeChange: 0
     fatalityRiskChange: 0
@@ -23,23 +27,9 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: 0
     outcomeDescription: 
-  - choiceText: 
-    cashChange: 0
-    incomeChange: 0
-    fatalityRiskChange: 0
-    injuryRiskChange: 0
-    actionPointCost: 0
-    influenceChange: 0
-    outcomeDescription: 
-  - choiceText: 
-    cashChange: 0
-    incomeChange: 0
-    fatalityRiskChange: 0
-    injuryRiskChange: 0
-    actionPointCost: 0
-    influenceChange: 0
-    outcomeDescription: 
+    endingText: 
   eventPrefab: {fileID: 1378834742176523407, guid: 4c95f57e7f0f410408d537c6127d1bfd,
     type: 3}
+  isActive: 1
   endsTheGame: 1
   disasterTurn: 5
