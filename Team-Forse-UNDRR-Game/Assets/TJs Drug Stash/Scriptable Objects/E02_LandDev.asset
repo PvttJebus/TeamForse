@@ -32,17 +32,21 @@ MonoBehaviour:
     injuryRiskChange: -0.2
     actionPointCost: 1
     influenceChange: -10
-    outcomeDescription: 
-    endingText: E02 Outcome 1
+    outcomeDescription: 'You priotrized selling the land , which gave a short-term
+      jump in funds, but didn''t provide any longterm safety benifits. '
+    endingText: 'You priotrized selling the land , which gave a short-term jump in
+      funds, but didn''t provide any longterm safety benifits. '
   - choiceText: Lease the land
-    cashChange: 0
+    cashChange: 10
     incomeChange: 1
     fatalityRiskChange: 0.2
     injuryRiskChange: 0.2
     actionPointCost: 1
     influenceChange: 10
-    outcomeDescription: 
-    endingText: E02 Outcome 2
+    outcomeDescription: 'You leased the land to the university which lead to improved
+      disaster response time from the university. '
+    endingText: 'You leased the land to the university which lead to improved disaster
+      response time from the university. '
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
   isActive: 0
