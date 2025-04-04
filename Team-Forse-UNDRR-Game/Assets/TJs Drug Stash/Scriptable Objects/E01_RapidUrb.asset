@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: E01_RapidUrb
   m_EditorClassIdentifier: 
   eventName: Rapid Urbanization
+  imageData: {fileID: 21300000, guid: 9c8ae84824005b84399ad06965af9553, type: 3}
   description: "Due to economic growth, the city has expanded rapidly, with many
     high-rise buildings and coastal developments constructed quickly to meet housing
     demands. However, most were built without climate-resilient designs, leaving
@@ -30,6 +31,7 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: 10
     outcomeDescription: 
+    endingText: you chose to do those resilient buildings! good job
   - choiceText: Prioritize Economic Growth & Expansion
     cashChange: 0
     incomeChange: 30
@@ -38,7 +40,9 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: -10
     outcomeDescription: 
+    endingText: you wanted to add some extra income! good jobss
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
+  isActive: 0
   minTurn: 2
   maxTurn: 2

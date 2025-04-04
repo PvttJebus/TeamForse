@@ -52,7 +52,13 @@ public class UIManager : MonoBehaviour
         actionsText.text = $"{eventManager.playerActionPoints}";
 
         // Update Political Influence Pie Chart (Normalized)
-        float influencePercent = eventManager.influence / 100f;
-        politicalInfluencePieChart.fillAmount = influencePercent;
+        if (eventManager != null)
+        {
+            float influencePercent = eventManager.influence / 100f;
+            if (politicalInfluencePieChart != null)
+            {
+                politicalInfluencePieChart.fillAmount = influencePercent;
+            }
+        }
     }
 }

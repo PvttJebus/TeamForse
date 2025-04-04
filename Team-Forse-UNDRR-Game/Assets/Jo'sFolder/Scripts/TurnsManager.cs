@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class TurnsManager : MonoBehaviour
 {
+    public int turnCount;
     public TurnState state { get; private set; }
     public GameManager gameManager; //{ get; private set; }
     //event manager ref goes here
@@ -29,11 +30,14 @@ public class TurnsManager : MonoBehaviour
         gameManager.AdjustCurrentPlayerActions(gameManager.maxPlayerActions - gameManager.currentPlayerActions);
         //events queued?
         eventsMan.StartTurn();
+        turnCount++;
         isEventQueued = eventsMan.RunDisastersLogic();
         isEventQueued = true;
         ////
         //UI.DisableAllObjects();
         //UI.StartTurnPopup();
+
+        //if theres nothing important, GoToNextPhase();
     }
 
     public void PreActionsPhase()
@@ -51,6 +55,8 @@ public class TurnsManager : MonoBehaviour
         ////
         //UI.DisableAllObjects();
         //UI.PreActionsPopup();
+
+        //if theres no events, GoToNextPhase();
     }
 
     public void PlayerActionsPhase()
@@ -69,26 +75,39 @@ public class TurnsManager : MonoBehaviour
         //UI.DisableAllObjects();
         //UI.EndTurnPopup();
         //do we still want to do all of our resource transactions at end of turn?
+
         //we can trigger an event here really easily to do both that and our proper end of turn things like a disaster.
+        //if there's no disaster, GoToNextPhase();
     }
 
     public void GoToNextPhase()
     {
         switch (state)
         {
+            //
             case TurnState.TURNSTART:
+                //
                 state = TurnState.PREACTIONS;
                 PreActionsPhase();
                 break;
+
+            //
             case TurnState.PREACTIONS:
+                //
                 state = TurnState.PLAYERACTIONS;
                 PlayerActionsPhase();
                 break;
+
+            //
             case TurnState.PLAYERACTIONS:
+                //
                 state = TurnState.TURNEND;
                 EndTurn();
                 break;
+
+            //
             case TurnState.TURNEND:
+                //
                 state = TurnState.TURNSTART;
                 StartTurn();
                 break;

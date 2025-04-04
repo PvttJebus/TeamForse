@@ -42,6 +42,9 @@ public class PlayerTurnsManager : MonoBehaviour
         // Move to TURNSTART state
         state = TurnState.TURNSTART;
 
+        //Set actions to max
+        eventManager.playerActionPoints = 3;
+
 
         // Update the EventManager with the *latest* turn number (no increments in EventManager).
         // The EventManager can check events for this turn.
@@ -54,6 +57,7 @@ public class PlayerTurnsManager : MonoBehaviour
         UpdatePhaseButtons();
 
         Debug.Log("[TurnsManager] Starting turn " + currentTurn + " (TURNSTART)");
+        PreActionsPhase();
     }
 
     // Phase 1: Pre-actions phase
@@ -62,6 +66,7 @@ public class PlayerTurnsManager : MonoBehaviour
         state = TurnState.PREACTIONS;
         UpdatePhaseButtons();
         Debug.Log("[TurnsManager] PreActionsPhase started.");
+        PlayerActionsPhase();
     }
 
     // Phase 2: Player actions phase
@@ -78,6 +83,7 @@ public class PlayerTurnsManager : MonoBehaviour
         state = TurnState.TURNEND;
         UpdatePhaseButtons();
         Debug.Log("[TurnsManager] EndTurn phase started.");
+        StartTurn();
     }
 
     // Called by UI buttons to advance to the next phase
