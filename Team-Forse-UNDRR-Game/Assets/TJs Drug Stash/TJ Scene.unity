@@ -4397,7 +4397,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -4455,6 +4455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endingString: 
+  endPanelPrefab: {fileID: 4284515745662933791, guid: 308151c582637dc44a0419a6ab6d7f36,
+    type: 3}
 --- !u!1 &818590384
 GameObject:
   m_ObjectHideFlags: 0

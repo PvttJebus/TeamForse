@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: E01_RapidUrb
   m_EditorClassIdentifier: 
   eventName: Rapid Urbanization
-  imageData: {fileID: 0}
+  imageData: {fileID: 21300000, guid: 9c8ae84824005b84399ad06965af9553, type: 3}
   description: "Due to economic growth, the city has expanded rapidly, with many
     high-rise buildings and coastal developments constructed quickly to meet housing
     demands. However, most were built without climate-resilient designs, leaving

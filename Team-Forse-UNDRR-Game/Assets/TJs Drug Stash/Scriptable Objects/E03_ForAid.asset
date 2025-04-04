@@ -32,8 +32,8 @@ MonoBehaviour:
     injuryRiskChange: 0.3
     actionPointCost: 0
     influenceChange: 10
-    outcomeDescription: E03 Outcome 1
-    endingText: E03 Outcome 2
+    outcomeDescription: 
+    endingText: E03 Outcome 1
   - choiceText: Refuse Aid & Prioritize Domestic Resources
     cashChange: 0
     incomeChange: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: -5
     outcomeDescription: 
-    endingText: 
+    endingText: E03 Outcome 2
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
   isActive: 0

@@ -28,6 +28,15 @@ MonoBehaviour:
     influenceChange: 0
     outcomeDescription: 
     endingText: 
+  - choiceText: Continue...
+    cashChange: 0
+    incomeChange: 0
+    fatalityRiskChange: 0
+    injuryRiskChange: 0
+    actionPointCost: 0
+    influenceChange: 0
+    outcomeDescription: 
+    endingText: 
   eventPrefab: {fileID: 1378834742176523407, guid: 4c95f57e7f0f410408d537c6127d1bfd,
     type: 3}
   isActive: 1

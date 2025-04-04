@@ -154,11 +154,6 @@ public class EventManager : MonoBehaviour
         //if event ends the game, end the game
         //
         //
-        //
-        //
-        //
-        //
-        //
     }
 
     public int GetChoiceForEvent(GameEventBase ev)

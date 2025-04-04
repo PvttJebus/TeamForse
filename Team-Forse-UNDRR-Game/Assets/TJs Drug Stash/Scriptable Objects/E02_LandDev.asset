@@ -32,8 +32,8 @@ MonoBehaviour:
     injuryRiskChange: -0.2
     actionPointCost: 1
     influenceChange: -10
-    outcomeDescription: E02 Outcome 1
-    endingText: E02 Outcome 2
+    outcomeDescription: 
+    endingText: E02 Outcome 1
   - choiceText: Lease the land
     cashChange: 0
     incomeChange: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
     actionPointCost: 1
     influenceChange: 10
     outcomeDescription: 
-    endingText: 
+    endingText: E02 Outcome 2
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
   isActive: 0
