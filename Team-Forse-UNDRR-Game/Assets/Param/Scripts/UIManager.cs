@@ -25,8 +25,8 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        eventManager = FindObjectOfType<EventManager>().GetComponent<EventManager>();
-        UpdateUI();
+        //eventManager = FindObjectOfType<EventManager>().GetComponent<EventManager>();
+        //UpdateUI();
     }
 
     void Update()
@@ -37,28 +37,28 @@ public class UIManager : MonoBehaviour
    public void UpdateUI()
     {
         // Update City Funds
-        cityFundsText.text = $"{eventManager.playerCash}";
+      //  cityFundsText.text = $"{eventManager.playerCash}";
 
-        // Update Population
-      //  popAliveText.text = $"{eventManager.currentPopulation}";
-        //popInjuredText.text = $"{eventManager.popInjured}";
-        //popDeadText.text = $"{eventManager.popDead}";
+      //  // Update Population
+      ////  popAliveText.text = $"{eventManager.currentPopulation}";
+      //  //popInjuredText.text = $"{eventManager.popInjured}";
+      //  //popDeadText.text = $"{eventManager.popDead}";
 
-        // Update Workforce
-        //int totalWorkforce = eventManager.workforceActive + eventManager.workforceIdle;
-        //workforceText.text = $"{eventManager.workforceIdle}/{eventManager.workforceTotal}";
+      //  // Update Workforce
+      //  //int totalWorkforce = eventManager.workforceActive + eventManager.workforceIdle;
+      //  //workforceText.text = $"{eventManager.workforceIdle}/{eventManager.workforceTotal}";
 
-        // Update Actions
-        actionsText.text = $"{eventManager.playerActionPoints}";
+      //  // Update Actions
+      //  actionsText.text = $"{eventManager.playerActionPoints}";
 
-        // Update Political Influence Pie Chart (Normalized)
-        if (eventManager != null)
-        {
-            float influencePercent = eventManager.influence / 100f;
-            if (politicalInfluencePieChart != null)
-            {
-                politicalInfluencePieChart.fillAmount = influencePercent;
-            }
-        }
+      //  // Update Political Influence Pie Chart (Normalized)
+      //  if (eventManager != null)
+      //  {
+      //      float influencePercent = eventManager.influence / 100f;
+      //      if (politicalInfluencePieChart != null)
+      //      {
+      //          politicalInfluencePieChart.fillAmount = influencePercent;
+      //      }
+      //  }
     }
 }

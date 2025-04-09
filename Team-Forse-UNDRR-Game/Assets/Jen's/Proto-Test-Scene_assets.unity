@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e2ac55815696b4fba5cd027a2bf870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1753763724}
   subPanels: []
   defaultCanvas: {fileID: 0}
   turnCanvas: {fileID: 0}
