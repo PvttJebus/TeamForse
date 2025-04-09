@@ -19,6 +19,7 @@ public class EventManager : MonoBehaviour
     public int playerIncome;
     public float totalFatalityRiskReduction;
     public float totalInjuryRiskReduction;
+    public float currentPopulation;
     public int playerActionPoints;
     public int influence;
 
@@ -46,11 +47,6 @@ public class EventManager : MonoBehaviour
                   $"FatalityRisk: {totalFatalityRiskReduction}, InjuryRisk: {totalInjuryRiskReduction}, " +
                   $"ActionPoints: {playerActionPoints}, Influence: {influence}");
     }
-
-    // ---------------------------------------------------------
-    // The rest of the code remains unchanged except we call UpdateResources
-    // in OnChoiceSelected instead of directly incrementing the fields.
-    // ---------------------------------------------------------
 
     public void CheckEventsForTurn(int turnNumber)
     {
@@ -120,30 +116,32 @@ public class EventManager : MonoBehaviour
 
         if (ev is DisasterEvent disasterEv && disasterEv.endsTheGame)
         {
+            EndingStringManagement endingStringManagement = GetComponent<EndingStringManagement>();
+            Debug.Log($"Ending the game, end string: {endingStringManagement.endingString}");
             Debug.LogWarning($"[EventManager] DisasterEvent {ev.eventName} ended the game!");
             // Insert end-of-game logic if desired
         }
     }
 
-    public void OnChoiceSelected(GameEventBase ev, int choiceIndex)
+    public void OnChoiceSelected(GameEventBase eventData, int choiceIndex)
     {
-        if (!eventChoiceHistory.ContainsKey(ev))
+        if (!eventChoiceHistory.ContainsKey(eventData))
         {
-            Debug.LogWarning($"[EventManager] Event not triggered or invalid reference: {ev.eventName}");
+            Debug.LogWarning($"[EventManager] Event not triggered or invalid reference: {eventData.eventName}");
             return;
         }
-        if (choiceIndex < 0 || choiceIndex >= ev.choices.Count)
+        if (choiceIndex < 0 || choiceIndex >= eventData.choices.Count)
         {
-            Debug.LogWarning($"[EventManager] Invalid choice index for {ev.eventName}");
+            Debug.LogWarning($"[EventManager] Invalid choice index for {eventData.eventName}");
             return;
         }
 
-        eventChoiceHistory[ev] = choiceIndex;
-        ev.OnChoiceSelected(choiceIndex);
+        eventChoiceHistory[eventData] = choiceIndex;
+        eventData.OnChoiceSelected(choiceIndex);
 
         // Instead of directly applying outcome to each field, 
         // we pass them to UpdateResources:
-        ChoiceOutcome outcome = ev.choices[choiceIndex];
+        ChoiceOutcome outcome = eventData.choices[choiceIndex];
         UpdateResources(outcome.cashChange,
                         outcome.incomeChange,
                         outcome.fatalityRiskChange,
@@ -151,7 +149,11 @@ public class EventManager : MonoBehaviour
                         -outcome.actionPointCost, // note it's negative cost
                         outcome.influenceChange);
 
-        Debug.Log($"[EventManager] Applied outcome: {outcome.choiceText} from {ev.eventName}.");
+        Debug.Log($"[EventManager] Applied outcome: {outcome.choiceText} from {eventData.eventName}.");
+
+        //if event ends the game, end the game
+        //
+        //
     }
 
     public int GetChoiceForEvent(GameEventBase ev)

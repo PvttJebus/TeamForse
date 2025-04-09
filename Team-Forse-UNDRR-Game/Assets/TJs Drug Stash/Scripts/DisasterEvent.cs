@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewDisasterEvent", menuName = "Events/DisasterEvent")]
@@ -22,7 +23,16 @@ public class DisasterEvent : GameEventBase
         if (endsTheGame)
         {
             Debug.Log($"DISASTER: {eventName} triggered. This ends the game!");
-            // The manager can react to `endsTheGame` and wrap up the session
         }
+    }
+    public override void OnChoiceSelected(int choiceIndex)
+    {
+        base.OnChoiceSelected(choiceIndex);
+        if (endsTheGame)
+        {
+            EndingStringManagement endstringRef = FindObjectOfType<EndingStringManagement>().GetComponent<EndingStringManagement>();
+            endstringRef.EndgamePopup();
+        }
+            
     }
 }

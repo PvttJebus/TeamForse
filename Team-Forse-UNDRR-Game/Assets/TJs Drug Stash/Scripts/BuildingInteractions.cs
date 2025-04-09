@@ -29,18 +29,26 @@ public class BuildingInteraction : MonoBehaviour
     {
         if (eventManager != null)
         {
-            // Use the new unified UpdateResources method
-            eventManager.UpdateResources(cashDelta,
-                                         incomeDelta,
-                                         fatalityRiskDelta,
-                                         injuryRiskDelta,
-                                         actionPointsDelta,
-                                         influenceDelta);
+            if (eventManager.playerActionPoints > 0)
+            {
+                // Use the new unified UpdateResources method
+                eventManager.UpdateResources(cashDelta,
+                                             incomeDelta,
+                                             fatalityRiskDelta,
+                                             injuryRiskDelta,
+                                             actionPointsDelta,
+                                             influenceDelta);
 
-            Debug.Log($"[BuildingInteraction] {name} used. " +
-                      $"Cash: {cashDelta}, Income: {incomeDelta}, " +
-                      $"FatalityRisk: {fatalityRiskDelta}, InjuryRisk: {injuryRiskDelta}, " +
-                      $"ActionPoints: {actionPointsDelta}, Influence: {influenceDelta}");
+                Debug.Log($"[BuildingInteraction] {name} used. " +
+                          $"Cash: {cashDelta}, Income: {incomeDelta}, " +
+                          $"FatalityRisk: {fatalityRiskDelta}, InjuryRisk: {injuryRiskDelta}, " +
+                          $"ActionPoints: {actionPointsDelta}, Influence: {influenceDelta}");
+            }
+            else
+            {
+                //Do popup?
+                Debug.Log("No action points! Cannot complete action");
+            }
         }
         else
         {

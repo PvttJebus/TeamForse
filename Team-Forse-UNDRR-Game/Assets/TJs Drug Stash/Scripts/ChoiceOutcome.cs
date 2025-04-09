@@ -14,4 +14,8 @@ public class ChoiceOutcome
     // If you’d like a short description of the outcome (optional):
     [TextArea]
     public string outcomeDescription;
+    //ending text input
+    [Header("Ending Text Input")]
+    [TextArea]
+    public string endingText;
 }
