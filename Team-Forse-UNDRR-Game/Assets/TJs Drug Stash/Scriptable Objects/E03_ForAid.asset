@@ -33,7 +33,7 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: 10
     outcomeDescription: 
-    endingText: E03 Outcome 1
+    endingText: 'you were able to provide humanitarian aid! good job '
   - choiceText: Refuse Aid & Prioritize Domestic Resources
     cashChange: 0
     incomeChange: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
     actionPointCost: 0
     influenceChange: -5
     outcomeDescription: 
-    endingText: E03 Outcome 2
+    endingText: You refused the humanitatian aid when they came to you
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
   isActive: 0

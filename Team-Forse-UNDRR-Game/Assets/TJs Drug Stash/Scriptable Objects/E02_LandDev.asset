@@ -18,9 +18,9 @@ MonoBehaviour:
     land back to the city, located in a high-traffic coastal area near the business
     district and beachfront. Due to its strategic location, multiple entities are
     interested in securing the land for vastly different purposes:\r\n\r\n- A powerful
-    corporation, Amazon has proposed purchasing the land for $100M to develop a high-end
-    commercial and residential complex. This would boost the city\u2019s economy
-    but increase population density in a high-risk flood zone.\r\n- The city\u2019s
+    corporation, Famazon has proposed purchasing the land for $100M to develop a
+    high-end commercial and residential complex. This would boost the city\u2019s
+    economy but increase population density in a high-risk flood zone.\r\n- The city\u2019s
     top university wants to lease the land to establish a climate research and disaster
     preparedness facility. This would provide critical data to improve disaster forecasting
     but comes with far less immediate financial gain.\r\n"
@@ -33,7 +33,8 @@ MonoBehaviour:
     actionPointCost: 1
     influenceChange: -10
     outcomeDescription: 
-    endingText: E02 Outcome 1
+    endingText: You sold the land to Famazon, giving you a sizable boost to cash,
+      but the building fell when the wind and rain hit...
   - choiceText: Lease the land
     cashChange: 0
     incomeChange: 1
@@ -41,7 +42,8 @@ MonoBehaviour:
     injuryRiskChange: 0.2
     actionPointCost: 1
     influenceChange: 10
-    outcomeDescription: 
+    outcomeDescription: The research facility came with a storm shelter, and you
+      were able to tell when the storm was coming.
     endingText: E02 Outcome 2
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
