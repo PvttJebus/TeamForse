@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9c8ae84824005b84399ad06965af9553
+guid: 22835b741096e544585ef1de95278e9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 262, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 1023, w: 548}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MENU_PAGE_with_title_0
+      name: tutorial3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 2
-        width: 1628
-        height: 1076
+        width: 748
+        height: 527
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7605c3d4852e8a447896904879687bff
-      internalID: 1021468695
+      spriteID: 1ca3052a24a608c42857058fac37c0aa
+      internalID: 1591076231
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MENU_PAGE_with_title_0: 1021468695
+      tutorial3_0: 1591076231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

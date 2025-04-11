@@ -24,23 +24,25 @@ MonoBehaviour:
     economic expansion, risking long-term devastation.\n"
   choices:
   - choiceText: Enforce climate-resilient building standards
-    cashChange: 40
+    cashChange: -40
     incomeChange: 0
     fatalityRiskChange: 0.05
     injuryRiskChange: 0.1
     actionPointCost: 0
     influenceChange: 10
-    outcomeDescription: 
+    outcomeDescription: 'You priotrized safety, which saw a reduction in death and
+      injury risk. '
     endingText: you chose to do those resilient buildings! good job
   - choiceText: Prioritize Economic Growth & Expansion
-    cashChange: 0
+    cashChange: 40
     incomeChange: 30
     fatalityRiskChange: -0.1
     injuryRiskChange: -0.2
     actionPointCost: 0
     influenceChange: -10
-    outcomeDescription: 
-    endingText: you wanted to add some extra income! good jobss
+    outcomeDescription: 'You priotrized economic growth, which saw a rise in city
+      funds but depriortized safety. This resulted in an increase in deaths and injuries '
+    endingText: you wanted to add some extra income! good job
   eventPrefab: {fileID: 6119095688199793028, guid: 5b14a29e807c0924db1c30132be3b4e6,
     type: 3}
   isActive: 0
