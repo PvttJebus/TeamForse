@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 9150570899010055568}
   - component: {fileID: 920471680276126259}
   - component: {fileID: 6673555908995851347}
+  - component: {fileID: 124838999373626337}
   m_Layer: 5
   m_Name: Action Points
   m_TagString: Untagged
@@ -265,6 +266,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &124838999373626337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046717215331026937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325585f38d9112844ac346f269234099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Action Points
 --- !u!1 &1315590337688914144
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +762,7 @@ GameObject:
   - component: {fileID: 513119950075437036}
   - component: {fileID: 3432430256443674168}
   - component: {fileID: 8450438818695461661}
+  - component: {fileID: 5017621618711635823}
   m_Layer: 5
   m_Name: UNDRR
   m_TagString: Untagged
@@ -881,6 +896,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   url: https://www.undrr.org/
+--- !u!114 &5017621618711635823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259331040097439665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325585f38d9112844ac346f269234099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: UNDRR WEBSITE
 --- !u!1 &4548870190114128031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1164,7 @@ GameObject:
   - component: {fileID: 2089648602545434791}
   - component: {fileID: 528469429346589397}
   - component: {fileID: 118658879348117124}
+  - component: {fileID: 4533601640073633099}
   m_Layer: 5
   m_Name: Funds
   m_TagString: Untagged
@@ -1200,6 +1229,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4533601640073633099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4817768444200384955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325585f38d9112844ac346f269234099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Funds
 --- !u!1 &4857090512464484516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2320,6 +2362,7 @@ GameObject:
   - component: {fileID: 9098182535504335917}
   - component: {fileID: 3047976789626746421}
   - component: {fileID: 2491773810990194711}
+  - component: {fileID: 9124846966853611142}
   m_Layer: 5
   m_Name: Population
   m_TagString: Untagged
@@ -2384,6 +2427,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9124846966853611142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7746888547482175553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325585f38d9112844ac346f269234099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Population
 --- !u!1 &8222973283315847932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,6 +2860,7 @@ GameObject:
   - component: {fileID: 5973856973881117687}
   - component: {fileID: 3768493038543342090}
   - component: {fileID: 3304525658777472491}
+  - component: {fileID: 2646435701810009505}
   m_Layer: 5
   m_Name: Influence
   m_TagString: Untagged
@@ -2868,3 +2925,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2646435701810009505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039672814861478104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325585f38d9112844ac346f269234099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Influence

@@ -1137,7 +1137,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3379470423755460931, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 427380239}
+    - targetCorrespondingSourceObject: {fileID: 3379470423755460931, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 427380240}
+    - targetCorrespondingSourceObject: {fileID: 3871329015024963271, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1338735429}
+    - targetCorrespondingSourceObject: {fileID: 3871329015024963271, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1338735428}
+    - targetCorrespondingSourceObject: {fileID: 3400874754473823634, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200315037}
+    - targetCorrespondingSourceObject: {fileID: 3400874754473823634, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200315038}
+    - targetCorrespondingSourceObject: {fileID: 1418013216840355912, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1336097008}
+    - targetCorrespondingSourceObject: {fileID: 1418013216840355912, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1336097009}
+    - targetCorrespondingSourceObject: {fileID: 702428589353044243, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207854397}
+    - targetCorrespondingSourceObject: {fileID: 702428589353044243, guid: f332d140a85ecdf4690d118da020aa95,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 207854396}
   m_SourcePrefab: {fileID: 100100000, guid: f332d140a85ecdf4690d118da020aa95, type: 3}
 --- !u!1 &198669711
 GameObject:
@@ -1251,6 +1291,47 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0009765625, y: -0.00048828125}
   m_SizeDelta: {x: 227.00003, y: 216.99997}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &207854392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 702428589353044243, guid: f332d140a85ecdf4690d118da020aa95,
+    type: 3}
+  m_PrefabInstance: {fileID: 196903406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &207854396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207854392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b530e15ff8d794990ea29bae6eea3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Hospital
+--- !u!64 &207854397
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207854392}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2911736426955009642, guid: b332ca86bd2574b468f233dd2344dbce, type: 3}
 --- !u!1001 &238054677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2445,6 +2526,47 @@ MonoBehaviour:
   menuToEnable: {fileID: 1940775378}
   cameraOffset: {x: -0.2, y: 0.1, z: 0}
   cameraOffsetEuler: {x: 25, y: 90, z: 0}
+--- !u!1 &427380237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3379470423755460931, guid: f332d140a85ecdf4690d118da020aa95,
+    type: 3}
+  m_PrefabInstance: {fileID: 196903406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &427380239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427380237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b530e15ff8d794990ea29bae6eea3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: City Hall
+--- !u!64 &427380240
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427380237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &438149438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,6 +5228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931266120}
   - component: {fileID: 931266121}
+  - component: {fileID: 931266122}
   m_Layer: 5
   m_Name: Tooltipmanager
   m_TagString: Untagged
@@ -5142,6 +5265,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1684a44acdca6bc41812a39582684abe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1907848942}
+  tooltipText: {fileID: 2085075780}
+--- !u!114 &931266122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931266119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ced134be4990cf49af8031f561dd752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipObject: {fileID: 1907848942}
@@ -6336,6 +6473,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533603493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1200315033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3400874754473823634, guid: f332d140a85ecdf4690d118da020aa95,
+    type: 3}
+  m_PrefabInstance: {fileID: 196903406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1200315037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200315033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b530e15ff8d794990ea29bae6eea3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Bank
+--- !u!64 &1200315038
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200315033}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 019449a0174ce1148a32b0bf118a6367, type: 3}
 --- !u!1 &1208246486
 GameObject:
   m_ObjectHideFlags: 0
@@ -6611,6 +6789,88 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0009765625, y: 0}
   m_SizeDelta: {x: 226.00003, y: 217.00003}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1336097004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1418013216840355912, guid: f332d140a85ecdf4690d118da020aa95,
+    type: 3}
+  m_PrefabInstance: {fileID: 196903406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336097008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336097004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b530e15ff8d794990ea29bae6eea3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: Factory
+--- !u!64 &1336097009
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336097004}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -125435165217083709, guid: fb25d466e381ee54987e8ad7d5d62cfc, type: 3}
+--- !u!1 &1338735424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3871329015024963271, guid: f332d140a85ecdf4690d118da020aa95,
+    type: 3}
+  m_PrefabInstance: {fileID: 196903406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1338735428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338735424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b530e15ff8d794990ea29bae6eea3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipMessage: CityHall
+--- !u!64 &1338735429
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338735424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3541629673168548286, guid: f5b246c5caa8ffd48b4e0e173f70c217, type: 3}
 --- !u!1 &1353692953
 GameObject:
   m_ObjectHideFlags: 0
@@ -9308,7 +9568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10105,7 +10365,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
